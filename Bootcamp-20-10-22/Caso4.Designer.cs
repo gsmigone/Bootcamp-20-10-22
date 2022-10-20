@@ -31,14 +31,21 @@
             this.cmbOpc = new System.Windows.Forms.ComboBox();
             this.lvlFor = new System.Windows.Forms.Label();
             this.btnCal = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDCir = new System.Windows.Forms.TextBox();
+            this.txtB1Tra = new System.Windows.Forms.TextBox();
+            this.txtARec = new System.Windows.Forms.TextBox();
+            this.txtBRec = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtB2Tra = new System.Windows.Forms.TextBox();
+            this.txtATra = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmbOpc
@@ -60,40 +67,41 @@
             // 
             // btnCal
             // 
-            this.btnCal.Location = new System.Drawing.Point(158, 325);
+            this.btnCal.Location = new System.Drawing.Point(168, 440);
             this.btnCal.Name = "btnCal";
             this.btnCal.Size = new System.Drawing.Size(75, 23);
             this.btnCal.TabIndex = 2;
             this.btnCal.Text = "Calcular";
             this.btnCal.UseVisualStyleBackColor = true;
+            this.btnCal.Click += new System.EventHandler(this.btnCal_Click);
             // 
-            // textBox1
+            // txtDCir
             // 
-            this.textBox1.Location = new System.Drawing.Point(158, 240);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtDCir.Location = new System.Drawing.Point(158, 240);
+            this.txtDCir.Name = "txtDCir";
+            this.txtDCir.Size = new System.Drawing.Size(100, 20);
+            this.txtDCir.TabIndex = 3;
             // 
-            // textBox2
+            // txtB1Tra
             // 
-            this.textBox2.Location = new System.Drawing.Point(158, 266);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtB1Tra.Location = new System.Drawing.Point(158, 333);
+            this.txtB1Tra.Name = "txtB1Tra";
+            this.txtB1Tra.Size = new System.Drawing.Size(100, 20);
+            this.txtB1Tra.TabIndex = 4;
             // 
-            // textBox3
+            // txtARec
             // 
-            this.textBox3.Location = new System.Drawing.Point(158, 169);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtARec.Location = new System.Drawing.Point(158, 169);
+            this.txtARec.Name = "txtARec";
+            this.txtARec.Size = new System.Drawing.Size(100, 20);
+            this.txtARec.TabIndex = 5;
             // 
-            // textBox4
+            // txtBRec
             // 
-            this.textBox4.Location = new System.Drawing.Point(158, 143);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 6;
+            this.txtBRec.Location = new System.Drawing.Point(158, 143);
+            this.txtBRec.Name = "txtBRec";
+            this.txtBRec.Size = new System.Drawing.Size(100, 20);
+            this.txtBRec.TabIndex = 6;
             // 
             // label1
             // 
@@ -107,20 +115,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(87, 240);
+            this.label2.Location = new System.Drawing.Point(106, 224);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Rectangulo:";
+            this.label2.Text = "Circulo:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(87, 273);
+            this.label3.Location = new System.Drawing.Point(90, 315);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Rectangulo:";
+            this.label3.Text = "Trapecio:";
             // 
             // label4
             // 
@@ -131,19 +139,85 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Altura";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(117, 146);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Base";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(103, 247);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Diametro";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(111, 340);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Base 1";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(112, 369);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Base 2";
+            // 
+            // txtB2Tra
+            // 
+            this.txtB2Tra.Location = new System.Drawing.Point(158, 366);
+            this.txtB2Tra.Name = "txtB2Tra";
+            this.txtB2Tra.Size = new System.Drawing.Size(100, 20);
+            this.txtB2Tra.TabIndex = 15;
+            // 
+            // txtATra
+            // 
+            this.txtATra.Location = new System.Drawing.Point(158, 398);
+            this.txtATra.Name = "txtATra";
+            this.txtATra.Size = new System.Drawing.Size(100, 20);
+            this.txtATra.TabIndex = 16;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(117, 401);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(34, 13);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Altura";
+            // 
             // Caso4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 411);
+            this.ClientSize = new System.Drawing.Size(413, 519);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtATra);
+            this.Controls.Add(this.txtB2Tra);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBRec);
+            this.Controls.Add(this.txtARec);
+            this.Controls.Add(this.txtB1Tra);
+            this.Controls.Add(this.txtDCir);
             this.Controls.Add(this.btnCal);
             this.Controls.Add(this.lvlFor);
             this.Controls.Add(this.cmbOpc);
@@ -159,13 +233,20 @@
         private System.Windows.Forms.ComboBox cmbOpc;
         private System.Windows.Forms.Label lvlFor;
         private System.Windows.Forms.Button btnCal;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDCir;
+        private System.Windows.Forms.TextBox txtB1Tra;
+        private System.Windows.Forms.TextBox txtARec;
+        private System.Windows.Forms.TextBox txtBRec;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtB2Tra;
+        private System.Windows.Forms.TextBox txtATra;
+        private System.Windows.Forms.Label label9;
     }
 }

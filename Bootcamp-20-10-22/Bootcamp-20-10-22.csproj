@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,6 +71,12 @@
     <Compile Include="Caso5.Designer.cs">
       <DependentUpon>Caso5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Caso6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caso6.Designer.cs">
+      <DependentUpon>Caso6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Caso5.resx">
       <DependentUpon>Caso5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caso6.resx">
+      <DependentUpon>Caso6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

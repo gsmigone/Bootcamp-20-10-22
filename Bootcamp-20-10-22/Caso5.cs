@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace Bootcamp_20_10_22
 {
@@ -19,30 +20,78 @@ namespace Bootcamp_20_10_22
 
         private void btnVal_Click(object sender, EventArgs e)
         {
-            string rol = txtRol.Text;
-            ValidarRol(rol);
+            string rol = txtRol.Text.ToLower();
+            rol = ValidarRol(rol);
+            string sexo = txtSex.Text.ToLower();
+            sexo = ValidarRol(sexo);
+            string nombre = txtNom.Text.ToLower();
+            Imprimir(nombre, sexo, rol);
         }
 
-        private void ValidarRol(string rol)
+        private string ValidarRol(string rol)
         {
-            switch (rol)
+            string validador = "no";
+            while (validador != "no" )
             {
-                case "Administrador":
-                    Imprimir("El rol es Administrador");
+                switch (rol) 
+            { 
+            
+                case "administrador":
+                        validador = "validado";
                     break;
-                case "Estandar":
-                    Imprimir("El rol es Estandar");
-                    break;
-                case "Invitado":
-                    Imprimir("El rol es Invitado");
-                    break;
+                case "estandar":
+                        validador = "validado";
+                        break;
+                case "invitado":
+                        validador = "validado";
+                        break;
 
             }
+                if(validador != "validado")
+                {
+                    rol = Interaction.InputBox("Error!! Ingresar rol nuevamente : ", "Rol").ToLower();
+                }
+                
+            }
+            return rol;
+            
         }
 
-        public void Imprimir(string texto)
+
+        private string ValidarSexo(string sexo)
         {
-            MessageBox.Show(texto);
+
+            string validador = "no";
+            while (sexo != "validado")
+            {
+                switch (sexo)
+                {
+
+                    case "femenino":
+                        validador = "validado";
+                        break;
+                    case "masculino":
+                        validador = "validado";
+                        break;
+                 
+
+                }
+                if (validador != "validado")
+                {
+                    sexo = Interaction.InputBox("Error!! Ingresar sexo (masculino/femenino) nuevamente : ", "Sexo").ToLower();
+                }
+
+            }
+            return sexo;
+
         }
+
+
+
+        public void Imprimir(string nombre,string sexo, string rol)
+        {
+            MessageBox.Show("Nombre: "+nombre+" Sexo: "+sexo+" Rol: "+ rol);
+        }
+
     }
 }

@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caso1-LoopsYVectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caso1-LoopsYVectores.Designer.cs">
+      <DependentUpon>Caso1-LoopsYVectores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Caso2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Caso1-LoopsYVectores.resx">
+      <DependentUpon>Caso1-LoopsYVectores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Caso2.resx">
       <DependentUpon>Caso2.cs</DependentUpon>
     </EmbeddedResource>

@@ -54,6 +54,7 @@
             this.btnNot.TabIndex = 1;
             this.btnNot.Text = "Agregar Notas";
             this.btnNot.UseVisualStyleBackColor = true;
+            this.btnNot.Click += new System.EventHandler(this.btnNot_Click);
             // 
             // lbNot
             // 
@@ -71,6 +72,7 @@
             this.btnCal.TabIndex = 3;
             this.btnCal.Text = "Calcular";
             this.btnCal.UseVisualStyleBackColor = true;
+            this.btnCal.Click += new System.EventHandler(this.btnCal_Click);
             // 
             // lbAlu
             // 

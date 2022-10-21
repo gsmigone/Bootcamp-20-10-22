@@ -47,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Case5-LoopsYVectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Case5-LoopsYVectores.Designer.cs">
+      <DependentUpon>Case5-LoopsYVectores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Caso1-LoopsYVectores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Caso1-LoopsYVectores.Designer.cs">
       <DependentUpon>Caso1-LoopsYVectores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caso2-LoopsYVectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caso2-LoopsYVectores.Designer.cs">
+      <DependentUpon>Caso2-LoopsYVectores.cs</DependentUpon>
     </Compile>
     <Compile Include="Caso2.cs">
       <SubType>Form</SubType>
@@ -59,11 +71,23 @@
     <Compile Include="Caso2.Designer.cs">
       <DependentUpon>Caso2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Caso3-LoopsYVectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caso3-LoopsYVectores.Designer.cs">
+      <DependentUpon>Caso3-LoopsYVectores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Caso3.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Caso3.Designer.cs">
       <DependentUpon>Caso3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caso4-LoopsYVectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caso4-LoopsYVectores.Designer.cs">
+      <DependentUpon>Caso4-LoopsYVectores.cs</DependentUpon>
     </Compile>
     <Compile Include="Caso4.cs">
       <SubType>Form</SubType>
@@ -91,14 +115,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Case5-LoopsYVectores.resx">
+      <DependentUpon>Case5-LoopsYVectores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Caso1-LoopsYVectores.resx">
       <DependentUpon>Caso1-LoopsYVectores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caso2-LoopsYVectores.resx">
+      <DependentUpon>Caso2-LoopsYVectores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Caso2.resx">
       <DependentUpon>Caso2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Caso3-LoopsYVectores.resx">
+      <DependentUpon>Caso3-LoopsYVectores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Caso3.resx">
       <DependentUpon>Caso3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caso4-LoopsYVectores.resx">
+      <DependentUpon>Caso4-LoopsYVectores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Caso4.resx">
       <DependentUpon>Caso4.cs</DependentUpon>

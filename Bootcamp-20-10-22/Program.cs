@@ -16,7 +16,7 @@ namespace Bootcamp_20_10_22
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Caso1_LoopsYVectores());
+            Application.Run(new Case5_LoopsYVectores());
         }
     }
 }
